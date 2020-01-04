@@ -18,7 +18,7 @@ def get_result():
 	query = [[float(request.form['text2'])]]
 	x_query = poly.transform(query)
 	sal = model.predict(x_query)
-	return 'Dear '+ request.form['text1'] +'Your prediction salary after'+request.form['text2']+'Experience is : '+str(sal)
+	return 'Dear '+ request.form['text1'] +'Your prediction salary after '+request.form['text2']+'Experience is : '+str(sal)
 	
 if __name__ == '__main__':
    app.run(debug=True)
